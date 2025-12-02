@@ -19,6 +19,7 @@
     navToggle.addEventListener('click', function () {
       const isOpen = navLinksContainer.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', String(isOpen));
+      navLinksContainer.setAttribute('aria-hidden', String(!isOpen));
     });
 
     // Close nav when a link is clicked (mobile)
@@ -27,6 +28,7 @@
         if (navLinksContainer.classList.contains('open')) {
           navLinksContainer.classList.remove('open');
           navToggle.setAttribute('aria-expanded', 'false');
+          navLinksContainer.setAttribute('aria-hidden', 'true');
         }
       });
     });

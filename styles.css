@@ -114,7 +114,8 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 1.5rem;
+  padding: 2rem 1.5rem; /* taller header padding */
+  position: relative; /* so dropdown can be positioned relative to nav */
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -127,7 +128,7 @@ textarea:focus-visible {
 }
 
 .nav-logo {
-  width: 56px;
+  width: 80px; /* larger logo for taller header */
   height: auto;
 }
 
@@ -140,11 +141,11 @@ textarea:focus-visible {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .brand-tagline {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   color: #94979c;
 }
 
@@ -162,9 +163,9 @@ textarea:focus-visible {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--smoke-silver);
-  padding: 1rem 0;
+  padding: 1.1rem 0; /* slightly more vertical space for taller header */
 }
 
 .nav-link::after {
@@ -200,7 +201,7 @@ textarea:focus-visible {
 
 .nav-toggle-bar {
   display: block;
-  width: 22px;
+  width: 26px;
   height: 2px;
   background-color: var(--smoke-silver);
   border-radius: 1px;
@@ -211,10 +212,68 @@ textarea:focus-visible {
   margin-top: 4px;
 }
 
+/* Responsive: collapse nav into toggle on smaller screens */
+@media (max-width: 820px) {
+  .nav {
+    padding: 1rem 1rem; /* shrink header on small screens */
+  }
+
+  .nav-logo {
+    width: 56px; /* scale logo down */
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.78rem;
+  }
+
+  .nav-links {
+    display: none; /* hide nav links by default on mobile */
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background-color: var(--charcoal-gray);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+    flex-direction: column;
+    padding: 0.5rem 0;
+    min-width: 220px;
+    z-index: 1001;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 0.65rem 1rem;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo { width: 48px; }
+  .brand-name { font-size: 0.9rem; }
+  .brand-tagline { font-size: 0.7rem; }
+  .nav { padding: 0.8rem 1rem; }
+}
+
 /* Hero */
 
 .section-hero {
-  padding: 4.5rem 0 4rem;
+  padding: 6rem 0 4rem; /* push hero down so it doesn't overlap taller header */
   background: radial-gradient(circle at top left, #2a2f34 0, var(--gunmetal-black) 52%, #050709 100%);
 }
 
