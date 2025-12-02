@@ -1,499 +1,181 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redpoint Readiness Group | Security Training & Consulting</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Redpoint Readiness Group provides real-world security training and consulting for healthcare, corporate, education, faith-based, and industrial clients across Birmingham and the Southeast U.S.">
+  <title>Redpoint Readiness Group | Real-World Security Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Redpoint Readiness Group delivers real-world security training and consulting for hospitals, healthcare, corporate campuses, schools, churches, and industrial sites.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#home" class="nav-brand">
-        <img src="redpoint-readiness-logo.png" alt="Redpoint Readiness Group logo" class="nav-logo">
-        <span class="nav-brand-text">
-          <span class="brand-name">Redpoint Readiness Group</span>
-          <span class="brand-tagline">Real-World Security. Train Like It Matters.</span>
-        </span>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="redpoint-readiness-logo.png" alt="Redpoint Readiness Group logo">
+        <span class="logo-text">Redpoint Readiness Group</span>
       </a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
       </button>
-
-      <ul class="nav-links" id="primary-nav" aria-hidden="false">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#industries" class="nav-link">Industries</a></li>
-        <li><a href="#training" class="nav-link">Training</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#process" class="nav-link">Process</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="training.html" class="nav-link">Training</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <a href="mailto:David.macbain@redpointrg.com" class="btn btn-small btn-accent nav-contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section id="home" class="section-hero" aria-labelledby="hero-heading">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class-badge="location-tag" class="location-tag">Birmingham, Alabama • Serving the Southeast U.S.</p>
-          <h1 id="hero-heading">Real-world security training for teams that can’t afford to guess.</h1>
-          <p class="hero-subtitle">
-            Reduce incidents, protect staff, and standardize your response under real-world conditions —
-            from the first contact at the front desk to the worst day in the field.
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Veteran-Owned Security Training & Consulting</p>
+          <h1>Real-World Security.<br>Train Like It Matters.</h1>
+          <p class="hero-text">
+            Redpoint Readiness Group delivers scenario-based security training and practical consulting
+            for healthcare, corporate, faith-based, and industrial environments across the Southeast U.S.
           </p>
           <div class="hero-actions">
-            <button class="btn btn-primary" data-scroll-target="#contact">Request a Quote</button>
-            <button class="btn btn-ghost" data-scroll-target="#training">View Training Programs</button>
+            <a href="training.html" class="btn btn-primary">View Training Programs</a>
+            <a href="process.html" class="btn btn-outline">See Our Process</a>
           </div>
-          <ul class="hero-highlights">
-            <li>Veteran-owned, instructor-led scenarios — not “check-the-box” slides.</li>
-            <li>Built for healthcare, corporate, education, faith-based, and industrial sites.</li>
-            <li>Integrated approach: policy, training, and on-the-ground implementation.</li>
-          </ul>
+          <div class="hero-tags">
+            <span>Armed & Unarmed Officer Training</span>
+            <span>De-escalation & MOAB</span>
+            <span>Healthcare & Behavioral Health Security</span>
+          </div>
         </div>
-        <div class="hero-media" aria-label="Training scenario illustration placeholder">
-          <div class="hero-media-inner">
-            <div class="hero-badge">Scenario-Based</div>
-            <p class="hero-media-title">Designed around the calls you actually get.</p>
-            <p class="hero-media-text">
-              Layered scenarios, pre-plans, and debriefs tailored to your campuses, post orders,
-              and risk profile. Visual asset placeholder for future photography or illustration.
-            </p>
+        <div class="hero-panel">
+          <div class="hero-card">
+            <h2>Built for the Real World</h2>
+            <ul>
+              <li>Scenario-based drills, not checkbox slide decks.</li>
+              <li>Aligned with policy, post orders, and real risk.</li>
+              <li>Designed for hospitals, campuses, and high-liability environments.</li>
+            </ul>
+            <a href="services.html" class="link-arrow">Explore Services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Credibility Bar -->
-    <section class="section-credibility" aria-label="Key credibility indicators">
-      <div class="container credibility-grid">
-        <div class="cred-item">
-          <span class="cred-label">Veteran-Owned &amp; Operated</span>
-        </div>
-        <div class="cred-item">
-          <span class="cred-label">Healthcare &amp; Corporate Security Specialists</span>
-        </div>
-        <div class="cred-item">
-          <span class="cred-label">Hundreds of Officers Trained</span>
-        </div>
-        <div class="cred-item">
-          <span class="cred-label cred-label--gold">Certification-Ready Programs</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="section section-services" aria-labelledby="services-heading">
+    <section class="section section-muted">
       <div class="container">
-        <header class="section-header">
-          <h2 id="services-heading">Core Services</h2>
-          <p>
-            Training and consulting built to close the gap between policy and what actually happens
-            in your halls, loading docks, and waiting rooms.
-          </p>
-        </header>
-
+        <h2 class="section-title">Who We Serve</h2>
+        <p class="section-lead">
+          Redpoint works with organizations where people, liability, and reputation are on the line.
+        </p>
         <div class="card-grid">
           <article class="card">
-            <h3>Armed &amp; Unarmed Security Officer Training</h3>
-            <p>
-              Foundation through advanced skills for officers working fixed posts, patrol, and special assignments.
-              Focus on legal authority, use of force decision-making, contact and cover, and report writing.
-            </p>
-            <a href="#training" class="card-link">Learn more in Training Programs</a>
+            <h3>Hospitals & Healthcare</h3>
+            <p>ED, behavioral health, and inpatient environments with complex clinical and security demands.</p>
+            <a href="industries.html#healthcare" class="link-arrow">Learn more</a>
           </article>
-
           <article class="card">
-            <h3>De-escalation &amp; Verbal Intervention</h3>
-            <p>
-              Practical tools to manage agitation, set boundaries, and reduce hands-on incidents. Role-play
-              scenarios modeled on real calls from healthcare, education, and corporate settings.
-            </p>
-            <a href="#training" class="card-link">See de-escalation tracks</a>
+            <h3>Corporate & Campuses</h3>
+            <p>Office towers, corporate campuses, and mixed-use sites balancing access, safety, and culture.</p>
+            <a href="industries.html#corporate" class="link-arrow">Learn more</a>
           </article>
-
           <article class="card">
-            <h3>Healthcare &amp; Behavioral Health Security</h3>
-            <p>
-              Training aligned with clinical realities: ligature risks, elopement, high-acuity patients,
-              visitor management, and coordination with nursing and behavioral health teams.
-            </p>
-            <a href="#training" class="card-link">View healthcare intensive</a>
+            <h3>Faith-Based & Schools</h3>
+            <p>Churches and schools that need thoughtful, low-visibility protective posture without fear-mongering.</p>
+            <a href="industries.html#faith" class="link-arrow">Learn more</a>
           </article>
-
           <article class="card">
-            <h3>Policy, Post Order &amp; Program Consulting</h3>
-            <p>
-              Build or tighten your security program with field-tested policies, post orders, and staffing models
-              that support both safety and patient / employee experience.
-            </p>
-            <a href="#process" class="card-link">See how our process works</a>
-          </article>
-
-          <article class="card">
-            <h3>Custom Scenario Design &amp; Tabletop Exercises</h3>
-            <p>
-              From violent intruder drills to disruptive visitor scenarios, we design and facilitate exercises
-              that pressure-test your team, not just your paperwork.
-            </p>
-            <a href="#training" class="card-link">Explore advanced response</a>
-          </article>
-
-          <article class="card">
-            <h3>Leadership &amp; Supervisor Development</h3>
-            <p>
-              Coaching for lieutenants, sergeants, house supervisors, and safety leaders on expectations,
-              coaching, documentation, and incident review.
-            </p>
-            <a href="#training" class="card-link">View leadership track</a>
+            <h3>Industrial & Logistics</h3>
+            <p>Warehouses, plants, and yards with 24/7 operations, contractors, and real physical hazards.</p>
+            <a href="industries.html#industrial" class="link-arrow">Learn more</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Industries -->
-    <section id="industries" class="section section-industries" aria-labelledby="industries-heading">
+    <section class="section">
       <div class="container">
-        <header class="section-header">
-          <h2 id="industries-heading">Industries We Serve</h2>
-          <p>
-            Every environment faces different pressures. We tune our scenarios, policies, and coaching
-            to the realities of your sites and your people.
-          </p>
-        </header>
-
-        <div class="tile-grid">
-          <article class="tile">
-            <h3>Healthcare &amp; Behavioral Health</h3>
-            <p>
-              ED crowding, behavioral health holds, family conflict, elopement risks. We help align security,
-              nursing, and administration so responses are safe, repeatable, and defensible.
+        <div class="split">
+          <div>
+            <h2 class="section-title">Why Redpoint Readiness Group?</h2>
+            <p class="section-lead">
+              We blend tactical experience, healthcare and corporate security leadership, and structured training
+              design into one unified approach.
             </p>
-          </article>
-          <article class="tile">
-            <h3>Corporate Campuses</h3>
-            <p>
-              Visitor management, disgruntled employees, parking deck incidents, and after-hours coverage.
-              We tighten playbooks and train officers to manage issues early and professionally.
-            </p>
-          </article>
-          <article class="tile">
-            <h3>Education</h3>
-            <p>
-              Focus on everyday reality: custody disputes, vaping, fights, trespassing, and threats.
-              Scenarios reinforce communication with administration and law enforcement.
-            </p>
-          </article>
-          <article class="tile">
-            <h3>Faith-Based Organizations</h3>
-            <p>
-              Volunteer and mixed-skill teams protecting open campuses. We build simple, calm response plans
-              for services, events, and weekday ministries.
-            </p>
-          </article>
-          <article class="tile">
-            <h3>Industrial &amp; Logistics Sites</h3>
-            <p>
-              Gate operations, contractor access, theft, and workplace violence risks. Training supports
-              both production demands and safe, consistent enforcement.
-            </p>
-          </article>
+          </div>
+          <div class="pill-grid">
+            <div class="pill">
+              <h3>Real-World Experience</h3>
+              <p>Veteran-owned and led by practitioners who have actually worn the badge, built programs, and run teams.</p>
+            </div>
+            <div class="pill">
+              <h3>Scenario-Based Training</h3>
+              <p>Drills and decision-making that mirror your environment, your policies, and your incident patterns.</p>
+            </div>
+            <div class="pill">
+              <h3>Policy-Aligned Instruction</h3>
+              <p>Training aligned with your post orders, use-of-force policies, and regulatory requirements.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Training Programs -->
-    <section id="training" class="section section-training" aria-labelledby="training-heading">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="training-heading">Training Programs &amp; Packages</h2>
-          <p>
-            Programs are built to be modular. We can deliver them as stand-alone courses
-            or fold them into a broader security program upgrade.
-          </p>
-        </header>
-
-        <div class="pricing-grid">
-          <article class="pricing-card">
-            <div class="pricing-header">
-              <h3>Baseline Readiness</h3>
-              <p class="pricing-tagline">Core skills for new and existing officers.</p>
-            </div>
-            <ul class="pricing-list">
-              <li>Officer fundamentals, legal basics, and use-of-force decision-making.</li>
-              <li>Contact and cover, radio discipline, and incident documentation.</li>
-              <li>Introductory de-escalation and customer service skills.</li>
-              <li>Ideal for new hires and contract guard forces.</li>
-            </ul>
-            <p class="pricing-meta">Typical duration: 1–2 days on-site.</p>
-            <button class="btn btn-primary btn-block" data-scroll-target="#contact">Request Proposal</button>
-          </article>
-
-          <article class="pricing-card">
-            <div class="pricing-header">
-              <h3>Advanced Response</h3>
-              <p class="pricing-tagline">Scenario-heavy training for higher-risk environments.</p>
-              <span class="pricing-badge">Popular</span>
-            </div>
-            <ul class="pricing-list">
-              <li>High-stress scenarios for assaults, weapons, and critical incidents.</li>
-              <li>Movement, containment, and coordination with law enforcement.</li>
-              <li>Tabletop drills and hotwash debriefs with leadership.</li>
-              <li>Ideal for hospitals, campuses, and large corporate sites.</li>
-            </ul>
-            <p class="pricing-meta">Typical duration: 2–3 days, modular.</p>
-            <button class="btn btn-primary btn-block" data-scroll-target="#contact">Request Proposal</button>
-          </article>
-
-          <article class="pricing-card">
-            <div class="pricing-header">
-              <h3>Leadership &amp; Supervisor Track</h3>
-              <p class="pricing-tagline">Equip your sergeants, lieutenants, and managers.</p>
-            </div>
-            <ul class="pricing-list">
-              <li>Expectations, coaching, and corrective action that stands up under review.</li>
-              <li>Incident review, after-action reporting, and trend tracking.</li>
-              <li>Practical leadership skills for mixed-experience teams.</li>
-              <li>Ideal for shift leaders and program managers.</li>
-            </ul>
-            <p class="pricing-meta">Typical duration: 1 day + follow-up sessions.</p>
-            <button class="btn btn-primary btn-block" data-scroll-target="#contact">Request Proposal</button>
-          </article>
-
-          <article class="pricing-card">
-            <div class="pricing-header">
-              <h3>Healthcare Security Intensive</h3>
-              <p class="pricing-tagline">Deep dive for hospitals and health systems.</p>
-              <span class="pricing-badge pricing-badge--gold">Healthcare Focus</span>
-            </div>
-            <ul class="pricing-list">
-              <li>Behavioral health, ED, and inpatient-focused scenarios.</li>
-              <li>Joint training with nursing and clinical leadership.</li>
-              <li>Policy and post order tune-up for key risk areas.</li>
-              <li>Ideal for single hospitals or multi-site systems.</li>
-            </ul>
-            <p class="pricing-meta">Typical duration: 2–4 days, customizable.</p>
-            <button class="btn btn-primary btn-block" data-scroll-target="#contact">Request Proposal</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section section-about" aria-labelledby="about-heading">
-      <div class="container about-grid">
+    <section class="section section-cta">
+      <div class="container cta-inner">
         <div>
-          <header class="section-header">
-            <h2 id="about-heading">About Redpoint Readiness Group</h2>
-            <p>
-              Redpoint Readiness Group is a veteran-owned security training and consulting firm
-              based in Birmingham, Alabama, serving clients across the Southeast.
-            </p>
-          </header>
+          <h2>Need training that holds up in court and on the floor?</h2>
           <p>
-            We exist for organizations that know “check-the-box” training is not enough. Our work is grounded in
-            real incidents, real facilities, and real people — not theoretical slide decks. Every program we deliver
-            is built to be practical, repeatable, and defensible when something goes wrong.
+            Let’s outline the right mix of armed training, de-escalation, MOAB, and security program support
+            for your organization.
           </p>
         </div>
-
-        <aside class="about-card" aria-label="Founder information">
-          <h3>Leadership: David Moore</h3>
-          <p>
-            David Moore is a veteran and security leader with extensive experience across healthcare,
-            corporate, and contract security programs. He has trained and led officers, supervisors,
-            and leaders responsible for high-consequence environments.
-          </p>
-          <ul class="about-list">
-            <li>Veteran with real-world operational and leadership background.</li>
-            <li>Experience across hospitals, behavioral health, corporate campuses, and industrial sites.</li>
-            <li>Instructor in de-escalation, defensive tactics, officer survival, and leadership development.</li>
-            <li>Focused on practical skills, professional communication, and clean documentation.</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section id="process" class="section section-process" aria-labelledby="process-heading">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="process-heading">How We Work</h2>
-          <p>
-            No canned program dropped on top of your campus. We follow a structured, repeatable process
-            so training lines up with your actual risks and constraints.
-          </p>
-        </header>
-
-        <ol class="process-steps">
-          <li class="process-step">
-            <div class="process-marker">1</div>
-            <div class="process-content">
-              <h3>Assess</h3>
-              <p>
-                We review your incidents, post orders, and layout. Short interviews with security, nursing,
-                leadership, and frontline staff surface what is really happening.
-              </p>
-            </div>
-          </li>
-          <li class="process-step">
-            <div class="process-marker">2</div>
-            <div class="process-content">
-              <h3>Design</h3>
-              <p>
-                We build a focused package of policies, scenarios, and drills that fit your staffing,
-                budget, and operational realities — not a generic “off-the-shelf” course.
-              </p>
-            </div>
-          </li>
-          <li class="process-step">
-            <div class="process-marker">3</div>
-            <div class="process-content">
-              <h3>Train</h3>
-              <p>
-                Instructor-led sessions, role-play, and scenario work on your campus or a suitable training site.
-                Officers practice until responses are calm, consistent, and documentable.
-              </p>
-            </div>
-          </li>
-          <li class="process-step">
-            <div class="process-marker">4</div>
-            <div class="process-content">
-              <h3>Validate</h3>
-              <p>
-                Tabletop reviews, drills, and after-action debriefs confirm what is working and where we need
-                to adjust policy, staffing, or training.
-              </p>
-            </div>
-          </li>
-          <li class="process-step">
-            <div class="process-marker">5</div>
-            <div class="process-content">
-              <h3>Support</h3>
-              <p>
-                Ongoing advisory support, refresher training, and help with incident trends so your program
-                keeps pace with new risks and leadership expectations.
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="contact-heading">Request a Conversation</h2>
-          <p>
-            Share a bit about your environment and current challenges. We’ll respond within one business day
-            with next steps and scheduling options.
-          </p>
-        </header>
-
-        <div class="contact-layout">
-          <form id="contact-form" class="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name<span class="required">*</span></label>
-                <input type="text" id="name" name="name" autocomplete="name" required>
-                <p class="field-error" id="error-name"></p>
-              </div>
-              <div class="form-group">
-                <label for="organization">Organization<span class="required">*</span></label>
-                <input type="text" id="organization" name="organization" autocomplete="organization" required>
-                <p class="field-error" id="error-organization"></p>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email<span class="required">*</span></label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-                <p class="field-error" id="error-email"></p>
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" autocomplete="tel">
-                <p class="field-error" id="error-phone"></p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="service">Service Interest<span class="required">*</span></label>
-              <select id="service" name="service" required>
-                <option value="">Select an option</option>
-                <option value="armed-unarmed-training">Armed / Unarmed Officer Training</option>
-                <option value="de-escalation">De-escalation &amp; Verbal Intervention</option>
-                <option value="healthcare-security">Healthcare Security Training</option>
-                <option value="consulting">Policy &amp; Program Consulting</option>
-                <option value="other">Other / Not Sure</option>
-              </select>
-              <p class="field-error" id="error-service"></p>
-            </div>
-
-            <div class="form-group">
-              <label for="message">What do you need help with?<span class="required">*</span></label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-              <p class="field-error" id="error-message"></p>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit Request</button>
-            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
-          </form>
-
-          <aside class="contact-aside">
-            <div class="contact-card">
-              <h3>Based in Birmingham, Alabama</h3>
-              <p>
-                Serving hospitals, healthcare systems, corporate campuses, schools, churches,
-                and industrial / logistics operations across the Southeast U.S.
-              </p>
-              <ul class="contact-list">
-                <li>On-site training at your facility or local range (for armed programs).</li>
-                <li>Scenario design and tabletop exercises for leadership teams.</li>
-                <li>Program reviews for policy, post orders, and staffing models.</li>
-              </ul>
-              <p class="contact-note">
-                We’ll never oversell a course you don’t need. If we’re not the right fit,
-                we’ll tell you plainly and point you in a better direction.
-              </p>
-            </div>
-          </aside>
+        <div class="cta-actions">
+          <a href="mailto:David.macbain@redpointrg.com" class="btn btn-primary">Start the Conversation</a>
+          <a href="process.html" class="btn btn-outline-light">View Our Process</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand">Redpoint Readiness Group</p>
-        <p class="footer-text">Security Training &amp; Consulting • Birmingham, Alabama</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="#home" class="footer-link">Home</a>
-        <a href="#services" class="footer-link">Services</a>
-        <a href="#contact" class="footer-link">Contact</a>
-      </div>
-
-      <div class="footer-meta">
-        <p class="footer-text">&copy; <span id="current-year"></span> Redpoint Readiness Group. All rights reserved.</p>
-        <p class="footer-text footer-disclaimer">
-          Redpoint Readiness Group is not an emergency response service. Call 911 in an emergency.
-        </p>
-        <div class="footer-social">
-          <a href="#" class="footer-link" aria-label="LinkedIn profile (placeholder)">LinkedIn</a>
-          <a href="#" class="footer-link" aria-label="Email contact (placeholder)">Email</a>
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="footer-logo-text">Redpoint Readiness Group</span>
+          <p>Real-World Security. Train Like It Matters.</p>
         </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="industries.html">Industries</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Training</h4>
+            <ul>
+              <li><a href="training.html#armed">Armed Officer Training</a></li>
+              <li><a href="training.html#ocat">OCAT / PATH / Baton</a></li>
+              <li><a href="training.html#moab">MOAB & De-escalation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:David.macbain@redpointrg.com">David.macbain@redpointrg.com</a></li>
+              <li>Birmingham, Alabama &amp; the Southeast U.S.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>&copy; <span id="year"></span> Redpoint Readiness Group. All rights reserved.</small>
       </div>
     </div>
   </footer>
