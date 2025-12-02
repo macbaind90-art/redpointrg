@@ -114,7 +114,7 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -122,12 +122,12 @@ textarea:focus-visible {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
   color: var(--smoke-silver);
 }
 
 .nav-logo {
-  width: 40px;
+  width: 56px;
   height: auto;
 }
 
@@ -140,11 +140,11 @@ textarea:focus-visible {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .brand-tagline {
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   color: #94979c;
 }
 
@@ -162,9 +162,9 @@ textarea:focus-visible {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--smoke-silver);
-  padding: 0.75rem 0;
+  padding: 1rem 0;
 }
 
 .nav-link::after {
@@ -193,14 +193,14 @@ textarea:focus-visible {
   background: none;
   border: 1px solid var(--steel-gray);
   border-radius: var(--radius-sm);
-  padding: 0.35rem 0.45rem;
+  padding: 0.45rem 0.6rem;
   cursor: pointer;
   margin-left: 0.75rem;
 }
 
 .nav-toggle-bar {
   display: block;
-  width: 18px;
+  width: 22px;
   height: 2px;
   background-color: var(--smoke-silver);
   border-radius: 1px;
