@@ -231,8 +231,8 @@ textarea:focus-visible {
   }
 
   .nav-links {
-    display: none; /* hide nav links by default on mobile */
     position: absolute;
+    inset-inline: 0;
     top: 100%;
     right: 1rem;
     background-color: var(--charcoal-gray);
@@ -242,10 +242,13 @@ textarea:focus-visible {
     padding: 0.5rem 0;
     min-width: 220px;
     z-index: 1001;
+    max-height: 0; /* collapsed by default */
+    overflow: hidden;
+    transition: max-height var(--transition-med);
   }
 
   .nav-links.open {
-    display: flex;
+    max-height: 320px; /* expands on open */
   }
 
   .nav-links li {
@@ -259,7 +262,22 @@ textarea:focus-visible {
   }
 
   .nav-toggle {
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  #hero-heading {
+    font-size: 1.7rem;
+  }
+
+  .form-row {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -960,48 +978,7 @@ textarea {
   }
 }
 
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-links {
-    position: absolute;
-    inset-inline: 0;
-    top: 100%;
-    background-color: var(--charcoal-gray);
-    flex-direction: column;
-    gap: 0;
-    max-height: 0;
-    overflow: hidden;
-    border-bottom: 1px solid #20242a;
-    transition: max-height var(--transition-med);
-  }
-
-  .nav-links.open {
-    max-height: 320px;
-  }
-
-  .nav-link {
-    padding: 0.75rem 1.5rem;
-    width: 100%;
-  }
-
-  .section {
-    padding: 3.5rem 0;
-  }
-
-  #hero-heading {
-    font-size: 1.7rem;
-  }
-
-  .form-row {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
+/* Removed duplicate small-screen rules (consolidated under 820px) */
 
 @media (max-width: 520px) {
   .hero-actions {
